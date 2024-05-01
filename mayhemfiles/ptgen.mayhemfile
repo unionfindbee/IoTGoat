@@ -5,4 +5,4 @@ target: ptgen
 cmds:
   - cmd: /app/targets/ptgen
 testsuite:
-  - file://../testsuite/ptgen
+  - file://testsuite/ptgen

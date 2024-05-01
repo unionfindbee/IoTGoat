@@ -5,4 +5,4 @@ target: trx
 cmds:
   - cmd: /app/targets/trx -f @@
 testsuite:
-  - file://../testsuite/trx
+  - file://testsuite/trx
