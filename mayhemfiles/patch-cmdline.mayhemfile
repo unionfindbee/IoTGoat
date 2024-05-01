@@ -3,4 +3,4 @@ duration: 90
 project: iotgoat
 target: patch-cmdline
 cmds:
-  - cmd: /app/targets/patch-cmdline @@
+  - cmd: /app/targets/patch-cmdline @@ 16kb
