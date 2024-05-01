@@ -13,5 +13,9 @@ RUN apt-get update && apt-get install -y \
 # Set the working directory in the container to /app
 WORKDIR /app
 
+RUN mkdir targets \
+    && gcc -o targets/patch-dtb /app/OpenWrt/openwrt-18.06.2/tools/patch-image/src/patch-dtb.c \
+    &&  gcc -o targets/patch-cmdline /app/OpenWrt/openwrt-18.06.2/tools/patch-image/src/patch-cmdline.c
+
 # Copy the current directory contents into working directory
 COPY . .
