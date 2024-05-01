@@ -7,7 +7,7 @@ docker build -t $MAYHEM_DOCKER_REGISTRY/bengutierrez/iotgoat-mayhem -f Dockerfil
 docker push $MAYHEM_DOCKER_REGISTRY/bengutierrez/iotgoat-mayhem
 
 mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/motorola-bin.mayhemfile .
-mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/nand_ecc.mayhemfile .
+mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/nand-ecc.mayhemfile .
 mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/osbridge-crc.mayhemfile .
 mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/otrx.mayhemfile .
 mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/padjffs2.mayhemfile .
