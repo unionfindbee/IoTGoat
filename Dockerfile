@@ -1,9 +1,15 @@
 FROM debian:12-slim
 
 # Install dependencies
-RUN apt -y update && apt -y install \
-    curl \
-    uuid-runtime 
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    clang \
+    llvm \
+    make \
+    cmake \
+    libfuzzer-llvm-dev \
+    && rm -rf /var/lib/apt/lists/* 
 
 # Set the working directory in the container to /app
 WORKDIR /app
