@@ -3,4 +3,4 @@ duration: 90
 project: iotgoat
 target: patch-dtb
 cmds:
-  - cmd: /app/targets/patch-dtb @@
+  - cmd: /app/targets/patch-dtb @@ /app/data/example.dtb 1024

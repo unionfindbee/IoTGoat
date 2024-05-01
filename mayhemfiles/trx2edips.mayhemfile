@@ -5,4 +5,4 @@ target: trx2edips
 cmds:
   - cmd: /app/targets/trx2edips @@ output.txt
 testsuite:
-  - file:///app/testsuite/trx2edips
+  - file://../testsuite/trx2edips

@@ -1,6 +1,8 @@
 image: $MAYHEM_DOCKER_REGISTRY/bengutierrez/iotgoat-mayhem:latest
 duration: 90
 project: iotgoat
-target: patch-cmdline
+target: ptgen
 cmds:
-  - cmd: /app/targets/patch-cmdline @@ "root=/dev/sda1 rw" 512
+  - cmd: /app/targets/ptgen
+testsuite:
+  - file://../testsuite/ptgen

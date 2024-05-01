@@ -5,4 +5,4 @@ target: srec2bin
 cmds:
   - cmd: /app/targets/srec2bin @@ output.bin
 testsuite:
-  - file:///app/testsuite/srec2bin
+  - file://../testsuite/srec2bin
