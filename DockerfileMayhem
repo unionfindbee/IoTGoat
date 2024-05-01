@@ -3,6 +3,8 @@ FROM debian:12-slim
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
+    clang \
+    llvm \
     vim \
     && rm -rf /var/lib/apt/lists/* 
 
@@ -13,6 +15,5 @@ WORKDIR /app
 COPY . .
 
 RUN mkdir targets \
-    && gcc -o targets/patch-dtb /app/OpenWrt/openwrt-18.06.2/tools/patch-image/src/patch-dtb.c \
-    &&  gcc -o targets/patch-cmdline /app/OpenWrt/openwrt-18.06.2/tools/patch-image/src/patch-cmdline.c
+    && ./scripts/tools_compile.sh 
 
