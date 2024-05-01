@@ -1,0 +1,14 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: dns313-header
+cmds:
+  - cmd: /app/targets/dgn3500sum @@ 0x1A2B PID123
+  - cmd: /app/targets/dgn3500sum
+testsuite:
+  - file://testsuite/trx
+
+
+
+
+

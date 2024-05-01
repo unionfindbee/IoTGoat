@@ -17,5 +17,6 @@ COPY . .
 
 RUN mkdir targets \
     && ./scripts/tools_compile.sh \
-    && ./scripts/dts.sh
+    && ./scripts/dts.sh \
+    cp /app/targets/sstrip /app/testsuite/trx/sstrip
 

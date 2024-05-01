@@ -8,8 +8,11 @@ docker push $MAYHEM_DOCKER_REGISTRY/bengutierrez/iotgoat-mayhem
 
 mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/add-header.mayhemfile .
 mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/asustrx.mayhemfile .
+mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/dgn3500sum.mayhemfile .
+mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/dns313-header.mayhemfile .
 mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/edimax-fw-header.mayhemfile .
 mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/encode-crc.mayhemfile .
+mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/mkbrncmdline.mayhemfile .
 mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/motorola-bin.mayhemfile .
 mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/nand-ecc.mayhemfile .
 mayhem run --duration $DURATION --owner $OWNER -f mayhemfiles/osbridge-crc.mayhemfile .
