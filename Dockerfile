@@ -10,6 +10,3 @@ WORKDIR /app
 
 # Copy the current directory contents into working directory
 COPY . .
-
-# Run run_mcode.sh
-RUN ./run_mcode.sh
