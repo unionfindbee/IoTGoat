@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     clang \
     llvm \
     vim \
-    apt install device-tree-compiler \
+    device-tree-compiler \
     && rm -rf /var/lib/apt/lists/* 
 
 # Set the working directory in the container to /app
