@@ -1,0 +1,6 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: encode-crc
+cmds:
+  - cmd: /app/targets/encode_crc @@ crc_output.txt
