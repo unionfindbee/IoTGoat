@@ -15,5 +15,5 @@ WORKDIR /app
 COPY . .
 
 RUN mkdir targets \
-    && ./scripts/tools_compile.sh || true
+    && ./scripts/tools_compile.sh 
 
