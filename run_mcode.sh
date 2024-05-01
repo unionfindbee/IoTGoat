@@ -1,6 +1,6 @@
 
 MAYHEM_DOCKER_REGISTRY=$(mayhem docker-registry)
-DURATION=600
+DURATION=1800
 OWNER=forallsecure
 
 docker build -t $MAYHEM_DOCKER_REGISTRY/bengutierrez/iotgoat-mayhem -f DockerfileMayhem .
