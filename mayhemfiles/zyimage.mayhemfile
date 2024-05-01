@@ -1,0 +1,6 @@
+image: $MAYHEM_DOCKER_REGISTRY/bengutierrez/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: zyimage
+cmds:
+  - cmd: /app/targets/zyimage @@
