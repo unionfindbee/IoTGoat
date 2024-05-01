@@ -1,0 +1,6 @@
+image: $MAYHEM_DOCKER_REGISTRY/bengutierrez/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: osbridge-crc
+cmds:
+  - cmd: /app/targets/osbridge-crc -i @@ -o output.txt

@@ -5,6 +5,10 @@ DURATION=180
 docker build -t $MAYHEM_DOCKER_REGISTRY/bengutierrez/iotgoat-mayhem -f DockerfileMayhem .
 docker push $MAYHEM_DOCKER_REGISTRY/bengutierrez/iotgoat-mayhem
 
+mayhem run --duration $DURATION -f mayhemfiles/motorola-bin.mayhemfile .
+mayhem run --duration $DURATION -f mayhemfiles/nand_ecc.mayhemfile .
+mayhem run --duration $DURATION -f mayhemfiles/osbridge-crc.mayhemfile .
+mayhem run --duration $DURATION -f mayhemfiles/otrx.mayhemfile .
 mayhem run --duration $DURATION -f mayhemfiles/padjffs2.mayhemfile .
 mayhem run --duration $DURATION -f mayhemfiles/patch-cmdline.mayhemfile .
 mayhem run --duration $DURATION -f mayhemfiles/patch-dtb.mayhemfile .

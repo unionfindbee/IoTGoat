@@ -1,0 +1,10 @@
+image: $MAYHEM_DOCKER_REGISTRY/bengutierrez/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: otrx
+cmds:
+  - cmd: /app/targets/otrx check @@  -o 0
+  - cmd: /app/targets/otrx create output.trx -f @@ -a 4096 -b 16384
+  - cmd: /app/targets/otrx extract @@ -o 0 -1 partition1_output.bin -2 partition2_output.bin -3 partition3_output.bin
+testsuite:
+  - file://testsuite/trx
