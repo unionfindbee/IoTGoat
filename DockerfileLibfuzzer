@@ -1,0 +1,7 @@
+FROM fuzzers/libfuzzer:12.0
+
+# Set the working directory in the container to /app
+WORKDIR /app
+
+# Copy the current directory contents into working directory
+COPY . .
