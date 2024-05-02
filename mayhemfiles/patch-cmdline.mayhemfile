@@ -1,0 +1,6 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: patch-cmdline
+cmds:
+  - cmd: /app/targets/patch-cmdline @@ "root=/dev/sda1 rw" 512

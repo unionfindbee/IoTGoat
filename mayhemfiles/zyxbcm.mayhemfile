@@ -1,0 +1,7 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: zyxbcm
+cmds:
+  - cmd: /app/targets/zyxbcm -i @@ -o output.txt
+

@@ -1,0 +1,9 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: nand_ecc
+cmds:
+  - cmd: /app/targets/motorola-bin --strip @@ output.bin
+  - cmd: /app/targets/motorola-bin --WR850G @@ /app/scripts/output.bin
+  - cmd: /app/targets/motorola-bin --WA840G @@ /app/scripts/output.bin
+  - cmd: /app/targets/motorola-bin --WE800G @@ /app/scripts/output.bin

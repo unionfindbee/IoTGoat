@@ -1,0 +1,13 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: mkbrncmdline
+cmds:
+  - cmd: /app/targets/mkbrncmdline -i @@ -o output.bin -a 0x8000 root=/dev/sda1 rw
+testsuite:
+  - file://testsuite/trx
+
+
+
+
+

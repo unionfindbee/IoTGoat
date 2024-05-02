@@ -1,0 +1,8 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: srec2bin
+cmds:
+  - cmd: /app/targets/srec2bin @@ output.bin
+testsuite:
+  - file://testsuite/srec2bin

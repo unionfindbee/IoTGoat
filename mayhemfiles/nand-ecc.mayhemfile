@@ -1,0 +1,6 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: nand-ecc
+cmds:
+  - cmd: /app/targets/nand_ecc -p 2048 -o 64 -e 40 @@ output.txt

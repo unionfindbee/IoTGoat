@@ -1,0 +1,11 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: edimax-fw-header
+cmds:
+  - cmd: /app/targets/edimax_fw_header -i @@ -o output.bin -m EDIMAX_MODEL -M EDIMAX_MAGIC -n mtd0 -v 1.0 -s 0x00000000 -e 0x00100000
+  - cmd: /app/targets/edimax_fw_header -i @@ -o output.bin -m EDIMAX_MODEL -M EDIMAX_MAGIC -n mtd0 -v 1.0 -s 0x00000000 -e 0x00100000 -t 1
+  - cmd: /app/targets/edimax_fw_header -f -i @@ -o output.bin -m EDIMAX_MODEL -M EDIMAX_MAGIC -n mtd0 -v 1.0 -s 0x00000000 -e 0x00100000
+
+
+

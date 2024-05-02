@@ -1,0 +1,8 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: trx
+cmds:
+  - cmd: /app/targets/trx -f @@
+testsuite:
+  - file://testsuite/trx

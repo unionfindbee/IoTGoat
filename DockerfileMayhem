@@ -1,0 +1,22 @@
+FROM debian:12-slim
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    clang \
+    llvm \
+    vim \
+    device-tree-compiler \
+    && rm -rf /var/lib/apt/lists/* 
+
+# Set the working directory in the container to /app
+WORKDIR /app
+
+# Copy the current directory contents into working directory
+COPY . .
+
+RUN mkdir targets \
+    && ./scripts/tools_compile.sh \
+    && ./scripts/dts.sh \
+    cp /app/targets/sstrip /app/testsuite/trx/sstrip
+

@@ -1,0 +1,10 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: add-header
+cmds:
+  - cmd: /app/targets/add_header model_id @@ output_file.bin
+
+
+
+

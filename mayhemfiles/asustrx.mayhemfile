@@ -1,0 +1,13 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: asustrx
+cmds:
+  - cmd: /app/targets/asustrx -i @@ -o asus_output.trx -p RT-AC68U -v 3.0.0.4
+testsuite:
+  - file://testsuite/trx
+
+
+
+
+

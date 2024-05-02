@@ -1,0 +1,1 @@
+ -v -h 12 -s 256 -o disk_image.bin -a 1 -l 1024 -t ext4 -p 4096

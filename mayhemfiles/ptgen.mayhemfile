@@ -1,0 +1,8 @@
+image: $MAYHEM_DOCKER_REGISTRY/forallsecure/iotgoat-mayhem:latest
+duration: 90
+project: iotgoat
+target: ptgen
+cmds:
+  - cmd: /app/targets/ptgen
+testsuite:
+  - file://testsuite/ptgen
